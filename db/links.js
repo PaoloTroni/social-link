@@ -34,7 +34,7 @@ const getAllLinks = async (loggedUserId, queryParams) => {
 
         if (startDate) {
             sqlQuery += ` ${clause} l.createdLink > ?`;
-            values.push(startDate);
+            values.push(`${startDate}T23:59:59`);
             clause = 'AND';
         }
 
