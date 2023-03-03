@@ -8,14 +8,16 @@ export const UserPage = () => {
 
   return (
     <>
-      <section>
-        <h2>Página de perfil de: {user.nombre}</h2>
-        <p>Id de usuario: {user.id}</p>
-        <p>Email: {user.email}</p>
-        <p>Biografia: {user.biography}</p>
-        {console.log(user.biography)}
-        {console.log(user)}
-      </section>
+      {user && (
+        <section>
+          <h2>Página de perfil de: {user.nombre}</h2>
+          <p>Id de usuario: {user.id}</p>
+          <p>Email: {user.email}</p>
+          <p>Biografia: {user.biography}</p>
+          {console.log(user.biography)}
+          {console.log(user)}
+        </section>
+      )}
       <section>
         <button>
           <Link to="/edit-user">Actualizar Datos</Link>

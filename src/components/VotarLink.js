@@ -31,35 +31,8 @@ export const VotarLink = ({ idLink, loggedUserVote, addVoteToLink }) => {
     }
   };
 
-  // const { data, setData } = useState(0);
-
-  // const handleForm = async (e) => {
-  //   e.preventDefault();
-
-  //   try {
-  //     setSending(true);
-
-  //     const Votar = await votarLinkService({ data, token });
-
-  //     setError("");
-  //     e.target.reset();
-  //   } catch (error) {
-  //     setError(error.message);
-  //   } finally {
-  //     setSending(false);
-  //   }
-  // };
-
   return (
     <form className="clasificacion">
-      {/* <label htmlFor="voto"></label>
-      <input
-        id="voto"
-        type="text"
-        name="voto"
-        onChange={handleChange}
-        required
-      /> */}
       <input
         id={`link-${idLink}voto5`}
         type="radio"

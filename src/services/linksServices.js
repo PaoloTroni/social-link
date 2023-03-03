@@ -1,9 +1,12 @@
-export const getAllLinksServices = async (token) => {
-  const response = await fetch(`${process.env.REACT_APP_BACKEND}`, {
-    headers: {
-      Authorization: token,
-    },
-  });
+export const getAllLinksServices = async (token, queryParams) => {
+  const response = await fetch(
+    `${process.env.REACT_APP_BACKEND}?${queryParams}`,
+    {
+      headers: {
+        Authorization: token,
+      },
+    }
+  );
 
   const json = await response.json();
 

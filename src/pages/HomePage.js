@@ -5,20 +5,45 @@ import { LinksList } from "../components/LinksList";
 import { NewLink } from "../components/NewLink";
 import { AuthContext } from "../context/AuthContext";
 import { useLinks } from "../hooks/useLinks";
+import DateRangePicker from "@wojtekmaj/react-daterange-picker";
 
 export const HomePage = () => {
-  const { links, loading, addLink, removeLink, addVoteToLink, error } =
-    useLinks();
+  const {
+    links,
+    loading,
+    addLink,
+    removeLink,
+    addVoteToLink,
+    error,
+    setSearchParams,
+    searchParams,
+  } = useLinks();
   const { user } = useContext(AuthContext);
 
   if (loading) return <p>cargando links...</p>;
   if (error) return <ErrorMessage message={error} />;
+
+  const searchParamsStartDate = searchParams.get("startDate")
+    ? new Date(searchParams.get("startDate"))
+    : null;
+  searchParamsStartDate?.setDate(searchParamsStartDate.getDate() + 1);
+  const searchParamsEndDate = searchParams.get("endDate")
+    ? new Date(searchParams.get("endDate"))
+    : null;
 
   console.log(links);
   return (
     <section className="homePageGlobal">
       <h2>Aquí están los links publicados</h2>
       {user && <NewLink addLink={addLink} />}
+      <DateRangePicker
+        value={[searchParamsStartDate, searchParamsEndDate]}
+        onChange={(value) => {
+          const startDate = value[0].toISOString().split("T")[0];
+          const endDate = value[1].toISOString().split("T")[0];
+          setSearchParams(new URLSearchParams({ startDate, endDate }));
+        }}
+      />
       <LinksList
         links={links}
         removeLink={removeLink}

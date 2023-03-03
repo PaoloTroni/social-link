@@ -1,4 +1,5 @@
 import { useContext, useEffect, useState } from "react";
+import { useSearchParams } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
 import { getAllLinksServices } from "../services/linksServices";
 
@@ -8,12 +9,14 @@ export const useLinks = () => {
   const [error, setError] = useState("");
   const { token } = useContext(AuthContext);
 
+  const [searchParams, setSearchParams] = useSearchParams();
+
   useEffect(() => {
     const loadLinks = async () => {
       try {
         setLoading(true);
 
-        const data = await getAllLinksServices(token);
+        const data = await getAllLinksServices(token, searchParams.toString());
         console.log(data);
         setLinks(data);
       } catch (error) {
@@ -24,7 +27,7 @@ export const useLinks = () => {
     };
 
     loadLinks();
-  }, [token]);
+  }, [token, searchParams]);
 
   const addLink = (newLink) => {
     setLinks([newLink, ...links]);
@@ -46,6 +49,8 @@ export const useLinks = () => {
   };
 
   return {
+    setSearchParams,
+    searchParams,
     links,
     loading,
     addLink,
