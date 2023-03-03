@@ -1,0 +1,74 @@
+section.registroGlobal {
+  margin: 3rem 0;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+article.registroFormulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 5rem;
+}
+
+article.registerPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logoRegistro {
+  width: 400px;
+  margin-bottom: 1rem;
+}
+
+.mensajeBienvenidaRegistro {
+  color: #333332;
+  font-size: large;
+  text-align: center;
+  font-weight: 700;
+
+  margin-bottom: 1.5rem;
+}
+
+form.formularioRegistro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button.registrarse {
+  width: 250px;
+  color: #e7e6e6;
+  background-color: #e95317;
+  padding: 0.5rem 0;
+  border-radius: 30px;
+}
+
+button.registrarse:hover {
+  background-color: #646464;
+  transition: 0.7s;
+}
+
+p.condicionesDePrivacidad {
+  color: #333332;
+  width: 370px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+p.siTengoCuenta {
+  color: #333332;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+.login {
+  color: #e95317;
+}
+
+footer {
+  height: 100%;
+}
