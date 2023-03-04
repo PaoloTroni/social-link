@@ -32,12 +32,13 @@ export const EditUserBio = () => {
       <h2>Actualizar biografía (opcional)</h2>
       <form onSubmit={handleForm}>
         <fieldset>
-          <label htmlFor="bio">Biografia</label>
+          <label htmlFor="bio"></label>
           <input
-            type="name"
+            type="text"
             id="bio"
             name="bio"
             value={bio}
+            placeholder="Escribe aquí tu Biografia"
             onChange={(e) => setBio(e.target.value)}
           />
         </fieldset>

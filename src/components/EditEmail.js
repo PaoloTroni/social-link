@@ -22,6 +22,7 @@ export const EditEmail = () => {
       await editUserService({ newEmail, token });
 
       setSuccess(true);
+
       setError("");
     } catch (error) {
       setError(error.message);
@@ -32,11 +33,13 @@ export const EditEmail = () => {
       <h2>Actualizar e-mail</h2>
       <form onSubmit={handleForm}>
         <fieldset>
-          <label htmlFor="email">Nuevo Email</label>
+          <p>Email actual: {user.email}</p>
+          <label htmlFor="email"></label>
           <input
             type="email"
             id="email"
             name="email"
+            placeholder="Nuevo Email"
             value={newEmail}
             required
             onChange={(e) => setNewEmail(e.target.value)}

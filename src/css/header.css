@@ -1,6 +1,6 @@
 header.headerGlobal {
   width: 1000px;
-  margin: 0 auto;
+  margin: 0;
   padding: 2rem 0 0 0;
 
   display: grid;
@@ -9,7 +9,11 @@ header.headerGlobal {
 
   align-items: center;
   justify-items: center;
+
+  /* position: fixed;
+  margin-left: 9.4rem; */
 }
+
 section.sectionLogo {
   width: 300px;
   display: flex;

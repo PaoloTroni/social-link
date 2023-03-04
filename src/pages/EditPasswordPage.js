@@ -32,34 +32,37 @@ export const EditPasswordPage = () => {
       <h2>Editar contraseña</h2>
       <form onSubmit={handleForm}>
         <fieldset>
-          <label htmlFor="password">Contraseña actual</label>
+          <label htmlFor="password"></label>
           <input
             type="password"
             id="password"
             name="password"
             value={password}
+            placeholder="Contraseña actual"
             required
             onChange={(e) => setPassword(e.target.value)}
           />
         </fieldset>
         <fieldset>
-          <label htmlFor="newPass">Contraseña nueva</label>
+          <label htmlFor="newPass"></label>
           <input
             type="password"
             id="newPass"
             name="newPass"
             value={newPass}
+            placeholder="Contraseña nueva"
             required
             onChange={(e) => setNewPass(e.target.value)}
           />
         </fieldset>
         <fieldset>
-          <label htmlFor="confirmNewPass">Confirmar la nueva contraseña</label>
+          <label htmlFor="confirmNewPass"></label>
           <input
             type="password"
             id="confirmNewPass"
             name="confirmNewPass"
             value={confirmNewPass}
+            placeholder="Confirmar la nueva contraseña"
             required
             onChange={(e) => setConfirmNewPass(e.target.value)}
           />

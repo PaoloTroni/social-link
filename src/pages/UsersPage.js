@@ -14,7 +14,7 @@ export const UsersPage = () => {
   return (
     <>
       <section>
-        <h2>Página de perfil de: {user.info.nombre}</h2>
+        <h2>Perfil del usuario: {user.info.nombre}</h2>
         <p>Id de usuario: {user.info.id}</p>
         <p>Email: {user.info.email}</p>
         <p>Biografia: {user.info.biography}</p>

@@ -34,7 +34,7 @@ export const HomePage = () => {
   console.log(links);
   return (
     <section className="homePageGlobal">
-      <h2>Aquí están los links publicados</h2>
+      {/* <h2>Aquí están los links publicados</h2> */}
       {user && <NewLink addLink={addLink} />}
       <DateRangePicker
         value={[searchParamsStartDate, searchParamsEndDate]}

@@ -16,7 +16,7 @@ export const LinksUser = () => {
     <ul>
       {user.links.map((link) => {
         return (
-          <li>
+          <li className="linkListLi" key={link.id}>
             <SingleLink link={link} />
           </li>
         );

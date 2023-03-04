@@ -13,7 +13,7 @@ export const LinkPage = () => {
 
   return (
     <section>
-      <h2>link</h2>
+      <h2>Página del Link creado número {link.id}</h2>
       <SingleLink link={link} />
     </section>
   );
