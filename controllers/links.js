@@ -13,7 +13,7 @@ const newLinkController = async (req, res, next) => {
     try {
         //VALIDACION CON JOI
         const schema = Joi.object().keys({
-            title: Joi.string().min(4).max(100).required(),
+            title: Joi.string().min(4).max(40).required(),
             url: Joi.string().uri().required(),
             description: Joi.string().min(5).max(80).required(),
         });
