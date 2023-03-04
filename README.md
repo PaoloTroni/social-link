@@ -16,7 +16,7 @@ consideren interesantes. Otros usuarios podrán votarlos si les gustan.
 
 -   Ejecutar el comando `npm run dev` para poner a la escucha al servidor.
 
--   Importar la colección `Proyecto_SOCIAL_LINKS.postman_collection` a la aplicación de Postman con todos los endpoints creados.
+-   Importar la colección `SOCIAL_LINKS.postman_collection` a la aplicación de Postman con todos los endpoints creados.
 
 ## Endpoints
 
