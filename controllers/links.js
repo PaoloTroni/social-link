@@ -15,7 +15,7 @@ const newLinkController = async (req, res, next) => {
         const schema = Joi.object().keys({
             title: Joi.string().min(4).max(100).required(),
             url: Joi.string().uri().required(),
-            description: Joi.string().min(5).max(500).required(),
+            description: Joi.string().min(5).max(80).required(),
         });
 
         const validation = schema.validate(req.body);
