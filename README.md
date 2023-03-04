@@ -4,7 +4,7 @@ SOCIAL LINK  es una APP WEB que permie a los usuarios registrarse y compartir en
 consideren interesantes. Otros usuarios podrán votarlos si les gustan.
 Para su correcto funcionamento es necesario tener en la escucha el servidor de su API correspondiente.
 
-# Dependencias necesarias:
+## Dependencias necesarias:
 
 ### npm i
 Para instalar todas las dependencias nativas de CRA.
@@ -15,9 +15,11 @@ Para instalar react-toastift.
 ### npm i @wojtekmaj/react-daterange-picker
 Para instalar el calenderio de rango de fechas.
 
-######### - Sobre  CRA - #########
+------------------------------------------------------------
 
-# Getting Started with Create React App
+# - Sobre  CRA:
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
