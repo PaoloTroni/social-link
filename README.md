@@ -13,7 +13,7 @@ Para instalar todas las dependencias nativas de CRA.
 Para instalar react-toastift.
 
 ### npm i @wojtekmaj/react-daterange-picker
-Para instalar el calenderio de rango de fechas.
+Para instalar el calendario de rango de fechas.
 
 ------------------------------------------------------------
 
