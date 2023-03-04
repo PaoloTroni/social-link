@@ -9,11 +9,7 @@ export const EditUserBio = () => {
 
   const [error, setError] = useState("");
 
-  useEffect(() => {
-    if (user) {
-      setBio(user.biography);
-    }
-  }, [user]);
+  useEffect(() => {}, [user]);
 
   const handleForm = async (e) => {
     e.preventDefault();
@@ -32,13 +28,14 @@ export const EditUserBio = () => {
       <h2>Actualizar biografía (opcional)</h2>
       <form onSubmit={handleForm}>
         <fieldset>
+          <p>Biografia actual: {user?.biography}</p>
           <label htmlFor="bio"></label>
           <input
-            type="text"
+            type="textarea"
             id="bio"
             name="bio"
+            placeholder="Nueva biografía"
             value={bio}
-            placeholder="Escribe aquí tu Biografia"
             onChange={(e) => setBio(e.target.value)}
           />
         </fieldset>

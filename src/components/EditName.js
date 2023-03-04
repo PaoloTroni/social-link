@@ -1,22 +1,23 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../context/AuthContext";
 import { editUserService } from "../services/userServices";
 
 export const EditName = () => {
-  const { token } = useContext(AuthContext);
+  const { token, user, setUser } = useContext(AuthContext);
   const [newName, setNewName] = useState("");
   const [success, setSuccess] = useState(false);
 
   const [error, setError] = useState("");
+
+  useEffect(() => {}, [user]);
 
   const handleForm = async (e) => {
     e.preventDefault();
 
     try {
       await editUserService({ newName, token });
-
+      setUser({ ...user, nombre: newName });
       setSuccess(true);
-      setNewName("");
       setError("");
     } catch (error) {
       setError(error.message);
@@ -27,11 +28,13 @@ export const EditName = () => {
       <h2>Actualizar nombre de usuario</h2>
       <form onSubmit={handleForm}>
         <fieldset>
-          <label htmlFor="name">Nuevo nombre de usuario</label>
+          <p>Nombre actual: {user?.nombre}</p>
+          <label htmlFor="name"></label>
           <input
             type="name"
             id="name"
             name="name"
+            placeholder="Nuevo nombre"
             value={newName}
             onChange={(e) => setNewName(e.target.value)}
           />

@@ -9,20 +9,15 @@ export const EditEmail = () => {
 
   const [error, setError] = useState("");
 
-  useEffect(() => {
-    if (user) {
-      setNewEmail(user.email);
-    }
-  }, [user]);
+  useEffect(() => {}, [user]);
 
   const handleForm = async (e) => {
     e.preventDefault();
 
     try {
       await editUserService({ newEmail, token });
-
+      setUser({ ...user, email: newEmail });
       setSuccess(true);
-
       setError("");
     } catch (error) {
       setError(error.message);
@@ -33,12 +28,12 @@ export const EditEmail = () => {
       <h2>Actualizar e-mail</h2>
       <form onSubmit={handleForm}>
         <fieldset>
-          <p>Email actual: {user.email}</p>
+          <p>Email actual: {user?.email}</p>
           <label htmlFor="email"></label>
           <input
             type="email"
-            id="email"
-            name="email"
+            id="newEmail"
+            name="newEmail"
             placeholder="Nuevo Email"
             value={newEmail}
             required
