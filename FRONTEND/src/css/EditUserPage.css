@@ -1,0 +1,35 @@
+.EditUserGlobal {
+  width: 1500px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr, auto;
+
+  justify-items: center;
+  align-content: center;
+}
+
+.EEditUser {
+  margin-top: 200px;
+  margin-bottom: 100px;
+  grid-column: 1;
+  grid-row: 2;
+
+  align-items: center;
+  row-gap: 1rem;
+  column-gap: 2rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+
+  height: 350px;
+  width: 1000px;
+  background-color: #e8e8e8;
+  box-shadow: -20px -20px 60px #ffffff, 20px 20px 60px #bebebe;
+  border-radius: 30px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}

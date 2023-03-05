@@ -1,0 +1,71 @@
+section.newLinkGlobal {
+  height: 250px;
+  width: 1200px;
+  display: grid;
+  gap: 1rem;
+  margin: 1rem 0;
+
+  background: #e8e8e8;
+  box-shadow: -20px -20px 60px #ffffff,
+              20px 20px 60px #bebebe;
+
+  border-radius: 30px;
+
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 10% auto;
+
+  justify-items: center;
+  align-content: center;
+ 
+}
+
+section.newLinkGlobal:hover {
+  height: 280px;
+  width: 1250px;
+
+  background: #e8e8e8;
+  box-shadow: -20px -20px 60px #ffffff,
+              20px 20px 60px #bebebe,
+              inset 20px 20px 50px #bebebe,
+              inset -20px -20px 50px #ffffff;
+  border: 10px solid #e8e8e800;
+
+  transition: 0.2s;
+}
+
+
+p.tituloNuevoLink {
+  grid-column: 1 / 3;
+  align-items: center;
+  font-size: x-large;
+  font-weight: 700;
+  color: #333332;
+  background-color: #33323200;
+
+  display: flex;
+  text-align: center;
+}
+
+article.estructuraFormularioNewLink {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+
+
+}
+
+button.BotonEnviarNuevoLink {
+  grid-column: 1 / 3;
+  grid-row: 3 / 3;
+
+  height: 35px;
+  width: 250px;
+  color: #e7e6e6;
+  background-color: #333332;
+  padding: 0.5rem 0;
+  border-radius: 30px;
+}
+
+button.BotonEnviarNuevoLink:hover {
+  background-color: #e95317;
+  transition: 0.3s;
+}

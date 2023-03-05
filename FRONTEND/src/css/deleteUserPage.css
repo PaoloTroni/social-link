@@ -1,0 +1,97 @@
+.DeleteUserGlobal{
+    width: 1500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+   
+    justify-items: center;
+    align-content: center;
+}
+
+.EDeleteUser{
+    margin-top: 300px;
+    grid-column: 1;
+    justify-items: center;
+    align-content: center;
+    gap: 1rem;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+
+
+    height: 270px;
+    width: 1000px;
+    background-color: #e8e8e8;
+    box-shadow: -20px -20px 60px #ffffff,
+    20px 20px 60px #bebebe;
+    border-radius: 30px;
+    padding: 5rem 3rem;
+}
+
+p.DeleteUserTitulo{
+    grid-column: 1;
+    grid-row: 1;
+    font-size: x-large;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p.DeleteUserSubTitulo{
+    grid-column: 1;
+    grid-row: 2;
+    font-size: large;
+    font-weight: 400;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form.EDeleteUserForm{
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+section.DeleteUserForm{
+    justify-self: center;
+    grid-column: 1;
+    grid-row: 3;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+input.DeleteUser{
+    text-align: center;
+    height: 35px;
+    width: 300px;
+    border: 1px solid #333332;
+    border-radius: 30px;
+    background-color: #33333200;
+    color: #333332;
+}
+
+
+.DeleteUserBoton {
+    width: 150px;
+    background-color: #e95317;
+    padding: 0.5rem 0;
+    border-radius: 30px;
+    color: #e7e6e6;
+    font-weight: 700;
+  }
+  
+  button.DeleteUserBoton:hover {
+    background-color: #646464;
+    transition: 0.3s;
+  }

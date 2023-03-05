@@ -1,0 +1,46 @@
+.legalNoticeGlobal {
+
+  margin: 0 auto;
+  width: 1000px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+
+
+.ElegalNotice{
+
+  margin-top: 165px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  width: 1200px;
+  background-color: #e8e8e8;
+  box-shadow: -20px -20px 60px #ffffff,
+  20px 20px 60px #bebebe;
+  border-radius: 30px;
+  padding: 2rem 3rem;
+  border-radius: 30px;
+}
+
+p.legalNoticeTitulo {
+  font-weight: 700;
+  font-size: large;
+  text-align: center;
+
+}
+
+p.legalNoticeP {
+  text-align: center;
+}
+
+img.legalNoticePng {
+  width: 400px;
+  padding-top: 2rem;
+
+}

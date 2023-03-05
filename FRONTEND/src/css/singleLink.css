@@ -1,0 +1,184 @@
+section.SingleLinkGlobal {
+  margin: 0 auto;
+  background-color: #e8e8e8;
+
+  border-radius: 30px;
+  padding: 2rem 3rem 0.5rem 3rem;
+
+  color: #333332;
+
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+a.TituloSingleLink {
+  width: 1100px;
+  border-bottom: 2px solid#e95317;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+#tituloSingleLink {
+  font-weight: 700;
+  font-size: xx-large;
+  background-color: #33323200;
+  color: #e95317;
+}
+
+p.DescripcionLink {
+  font-weight: 700;
+  padding-top: 1rem;
+  grid-row: 2;
+  grid-column: 1;
+}
+a.linkSingleLink {
+  grid-row: 2;
+  grid-column: 2;
+  justify-self: center;
+  align-self: center;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  margin-top: 1rem;
+  height: 35px;
+  width: 350px;
+  text-align: center;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+
+  background-color: #f0f0f000;
+  border: 1px solid #333332;
+  border-radius: 30px;
+  color: #333332;
+}
+
+a.linkSingleLink:hover {
+  background-color: #f0f0f000;
+  color: #e95317;
+}
+
+p.VotosPublicacion {
+  padding-top: 1rem;
+  background-color: #f0f0f000;
+  width: 200px;
+  grid-row: 2 / span 3;
+  grid-column: 3;
+  justify-self: center;
+  align-self: flex-start;
+  font-size: medium;
+  text-align: center;
+}
+
+p.PublicacionNoVoto {
+  padding-top: 1rem;
+  background-color: #f0f0f000;
+  width: 200px;
+  grid-row: 1 / span 3;
+  grid-column: 3;
+  justify-self: center;
+  align-self: center;
+
+  font-size: medium;
+  text-align: center;
+}
+
+form.clasificacion {
+  background-color: #f0f0f000;
+  grid-row: 3 / span 5;
+  grid-column: 3;
+  justify-self: center;
+  align-self: center;
+
+  text-align: center;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label.estrella {
+  background-color: #33323200;
+  color: #333232;
+  font-size: 30px;
+}
+
+.clasificacion {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+label.estrella:hover,
+label.estrella:hover ~ label {
+  color: #ffc400;
+}
+
+input[type="radio"]:checked ~ label {
+  color: #ffc400;
+}
+
+article.datos1 {
+  grid-row: 3 / span 4;
+  grid-column: 1;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+
+  background-color: #33323200;
+}
+
+article.datos2 {
+  grid-row: 3 / span 4;
+  grid-column: 2;
+  justify-self: center;
+  align-self: center;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+
+  background-color: #33323200;
+}
+a.TituloSingleLink {
+  grid-row: 1;
+  grid-column: 1 / span 3;
+}
+p.pSingleLink {
+  background-color: #33323200;
+  font-weight: 700;
+}
+
+.UserSingleLink {
+  background-color: #33323200;
+  color: #333332;
+  font-weight: 400;
+}
+
+button.BorrarLink {
+  grid-row: 3 / span 4;
+  grid-column: 3;
+  justify-self: center;
+  align-self: center;
+
+  height: 25px;
+  width: 150px;
+  font-weight: 700;
+  color: #e7e6e6;
+  background-color: #e95317;
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+button.BorrarLink:hover {
+  background-color: #646464;
+  transition: 0.3s;
+}

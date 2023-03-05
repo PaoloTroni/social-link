@@ -1,0 +1,74 @@
+.EditNameGlobal{
+    grid-column: 1;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+
+
+    background-color: #e8e8e800;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.EditNameActual{
+    margin: 0 auto;
+    width: 400px;
+    padding-bottom: 0.5rem;
+
+    grid-column: 1;
+    grid-row: 1;
+    font-weight: 700;   
+ }
+
+.EditNameTitulo{
+    margin: 0 auto;
+    width: 400px;
+    padding-bottom: 0.5rem;
+    
+    grid-column: 1;
+    grid-row: 2;
+    font-weight: 700;
+}
+
+
+.EEditNameForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.EditNameForm{
+    grid-column: 1;
+    grid-row: 3;
+
+
+    width: 400px;
+    padding: 0.8rem 1rem;
+    text-align: center;
+    border: 1px solid #333332;
+    border-radius:0 30px 30px 30px;
+}
+
+input::placeholder{
+    text-align:start;
+}
+
+
+button.EditNameBoton {
+    grid-column: 1;
+    grid-row: 4;
+    margin-top: 0.5rem;
+
+    width: 150px;
+    color: #e7e6e6;
+    background-color: #e95317;
+    padding: 0.5rem 0;
+    border-radius: 30px;
+  }
+  
+  button.EditNameBoton:hover {
+    background-color: #646464;
+    transition: 0.3s;
+  }

@@ -1,0 +1,36 @@
+20/02
+
+- Queda pendiente mirar porque el req.idUser del controller de deleteLinkById (en el back "./controllers/links") 
+sale undefined y de consecuencia no funciona.
+
+- Poner el Footer fuera del main. YA ESTA (23/02)
+
+23 - 24/02
+- Problema del Delete solucionado: faltaba AuthUser en el archivo server.js del back, en el controllers correspondente. 
+- implementado componente votar (pero no vota correctamente)
+- Actualizada pagina de userEdit - FALTA IMPLEMENTAR PARA ADD BIOGRAFIA, MOSTRAR LOS LINKS DE LOS USUARIOS E MOSTRAR DATOS DE OTROS USUARIOS QUE NO SEAN 
+SOLO LOS QUE ESTAN LOGEADOS
+- Refactorizado el archivo ./services/index.js que ya no existe. Los services están divididos en userServices y linksServices.
+
+-Actualizada pagina de editUser - APARENTEMENTE FUNCIONA PERO NO ACTUALIZA LOS DATOS
+-Actualizada pagina de editPass - DA ERROR AL INTENTAR ACTUALIZAR LA CONTRASEÑA - FALTA PONER PARA QUE EL USUARIO INTRODUZCA LA CONTRASEÑA ACTUAL
+
+- Implementada página de error (ErrorLoginRegisterPage.js) en caso un usuario ya logeado intente registrarse o iniciar sesión (estando la sesion activa).
+- Tentativa de implementar "toast alerts" de react-toastify en ./components/SingleLink.js pero sin éxito.
+
+COSAS PENDIENTES AL DÍA DE HOY:
+
+- Solucionar errores relativos a:
+0. Implementar el CSS en el código actual
+1. VOTOS
+2. Página de usuarios (biografia, visualizar datos de otros usuarios)
+3. editUser
+4. editPass
+5. Filtros por fecha
+6. SERIA MUY IMPORTANTE IMPLEMENTAR UN DELETE USER
+(NO HAY END POINT EN EL BACK PARA ESO). Pero yo lo 
+Veo mucho más necesario eso que poner filtros o poner
+Avatar o biografia de usuario.
+
+Por lo menos, yo, como usuario no me inscribiría
+En una página donde no pueda darme de baja.

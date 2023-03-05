@@ -1,0 +1,28 @@
+ul.linkListGlobal {
+  display: flex;
+  flex-direction: column;
+
+  gap: 2.5rem;
+
+}
+
+li.linksListli {
+  background-color: #e8e8e8;
+  box-shadow: -20px -20px 60px #ffffff,
+  20px 20px 60px #bebebe;
+  border-radius: 30px;
+
+  width: 1200px;
+  margin: 0 auto;
+  
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  
+}
+li.linksListli:hover {
+  width: 1250px;
+  border: 10px solid #e95317;
+  border-radius: 30px;
+  transition: 0.3s;
+}

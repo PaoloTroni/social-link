@@ -1,0 +1,130 @@
+section.DatosUserGlobal {
+  width: 1500px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr, 1fr, 1fr, 1fr;
+
+  justify-items: center;
+  align-content: center;
+}
+
+section.DatosUser {
+  margin-top: 180px;
+  grid-column: 1;
+  grid-row: 2;
+
+  justify-items: center;
+  align-content: center;
+
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: 1fr, 1fr;
+  row-gap: 1.5rem;
+  column-gap: 12rem;
+
+  height: 200px;
+  width: 1000px;
+  background-color: #e8e8e8;
+  box-shadow: -20px -20px 60px #ffffff, 20px 20px 60px #bebebe;
+  border-radius: 30px;
+}
+
+#black {
+  font-size: large;
+  font-weight: 700;
+  color: #333332;
+}
+
+#regular {
+  font-weight: 400;
+  color: #333332;
+}
+
+.ENameUser {
+  grid-row: 1;
+  grid-column: 1;
+  justify-self: end;
+}
+
+.NameUser {
+  text-align: start;
+  height: 35px;
+  width: 300px;
+  padding: 0.5rem 0;
+  padding-left: 0.5rem;
+  margin-top: 0.3rem;
+
+  border: 1px solid #333332;
+  border-radius: 0 30px 30px 30px;
+  background-color: #33333200;
+  color: #333332;
+}
+
+.EEmailUser {
+  grid-row: 1;
+  grid-column: 2;
+  justify-self: start;
+}
+
+.EmailUser {
+  text-align: start;
+  height: 35px;
+  width: 300px;
+  padding: 0.5rem 0;
+  padding-left: 0.5rem;
+  margin-top: 0.3rem;
+
+  border: 1px solid #333332;
+  border-radius: 0 30px 30px 30px;
+  background-color: #33333200;
+  color: #333332;
+}
+
+.EBioUser {
+  grid-row: 2;
+  grid-column: 1 / span 2;
+  justify-self: center;
+}
+
+.BioUser {
+  text-align: center;
+  height: 70px;
+  width: 800px;
+  padding: 0.5rem 0;
+  margin-top: 0.3rem;
+
+  border: 1px solid #333332;
+  border-radius: 0 30px 30px 30px;
+  background-color: #33333200;
+  color: #333332;
+}
+
+.Botones {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  grid-column: 1;
+  grid-row: 3;
+  background-color: #33333200;
+  gap: 2rem;
+}
+
+.boton {
+  background-color: #33333200;
+  color: #e7e6e6;
+  font-weight: 700;
+}
+
+#Formato {
+  width: 250px;
+
+  background-color: #e95317;
+  padding: 0.5rem 0;
+  border-radius: 30px;
+}
+
+#Formato:hover {
+  background-color: #646464;
+  transition: 0.3s;
+}

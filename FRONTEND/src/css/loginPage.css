@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap");
+
+* {
+  font-family: "Ubuntu", sans-serif;
+  font-size: medium;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  background-color: #e8e8e8;
+}
+
+.linkFooter {
+  color: #333332;
+}
+
+.linkFooter:hover {
+  color: #e95317;
+}
+
+section.global {
+  margin-top: 20px;
+  margin-bottom: 100px;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.homePage {
+  height: 500px;
+  padding-right: 3rem;
+}
+
+section.estructuraFormulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  grid-template-columns: 1fr 1fr;
+  height: 200px;
+  margin-bottom: 1.5rem;
+}
+
+input.formulario {
+  background-color: #e8e8e8;
+  width: 250px;
+  border: 0.5px solid #646464;
+  border-radius: 30px;
+  padding: 0.5rem 0;
+  text-align: center;
+  margin-bottom: 1.3rem;
+}
+
+input::placeholder {
+  color: #646464;
+  text-align: center;
+}
+
+button.inicioSesion {
+  width: 250px;
+  color: #e7e6e6;
+  background-color: #e95317;
+  padding: 0.5rem 0;
+  border-radius: 30px;
+}
+
+button.inicioSesion:hover {
+  background-color: #646464;
+  transition: 0.3s;
+}
+
+.noTengoCuenta {
+  color: #333332;
+
+  padding-top: 1.5rem;
+}
+
+.registro {
+  font-weight: 700;
+  color: #e95317;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 1250px;
+  height: 80px;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #e0e0e0;
+  border-radius: 30px 30px 0 0;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+}
+
+footer > ul.estructuraFooter {
+  background: #e0e0e000;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+footer > ul.estructuraFooter > li {
+  padding: 1rem;
+  background: #e0e0e000;
+}
+
+footer > p {
+  background: #e0e0e000;
+  padding-bottom: 2rem;
+  color: #3333324b;
+  font-weight: 700;
+}
+
+.linkFooter {
+  background: #e0e0e000;
+  font-weight: 700;
+}
+
+.EnlHack {
+  background: #e0e0e000;
+  font-weight: 700;
+  color: #3333324b;
+}

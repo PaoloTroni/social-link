@@ -1,0 +1,66 @@
+.ErrorLoginRegisterGlobal{
+    width: 1500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+    justify-items: center;
+    align-content: center;
+}
+
+
+.ErrorLoginRegister{
+
+    margin-top: 310px;
+    grid-column: 1;
+    grid-row: 2;
+
+    justify-items: center;
+    align-content: center;
+
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    row-gap: 1.5rem;
+    column-gap: 12rem;
+    padding: 2.5rem 2.5rem;
+
+    text-align: center;
+
+    height: 250px;
+    width: 500px;
+    background-color: #e8e8e8;
+    box-shadow: -20px -20px 60px #ffffff,
+    20px 20px 60px #bebebe;
+    border-radius: 30px;
+}
+
+.Atencion{
+    font-weight: 700;
+    font-size: large;
+    color: #333332; 
+}
+
+.LinkLogin{
+    font-weight: 700;
+    font-size: large;
+    color: #333332;
+}
+.LinkLogin:hover{
+     color: #e95317;
+}
+
+button.botonError{
+    width: 250px;
+    color: #e7e6e6;
+    font-weight: 700;
+    background-color: #e95317;
+    padding: 0.5rem 0;
+    border-radius: 30px;
+    
+}
+
+button.botonError:hover{
+    background-color: #646464;
+    transition: 0.3s;
+}
