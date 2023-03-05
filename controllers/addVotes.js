@@ -46,8 +46,8 @@ const addVotes = async (req, res, next) => {
         // Obtenemos el valor del voto del req.body
         const { voto } = req.body;
 
-        //Comprobamos que el voto sea un número entre 1 y 9
-        const schema = Joi.number().min(1).max(9).required();
+        //Comprobamos que el voto sea un número entre 1 y 5
+        const schema = Joi.number().min(1).max(5).required();
 
         const validation = schema.validate(voto);
 
