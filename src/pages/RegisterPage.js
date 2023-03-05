@@ -4,6 +4,7 @@ import logo from "../images/Social-Link.png";
 import register from "../images/registerPage.png";
 import { Link, useNavigate } from "react-router-dom";
 import { registerUserService } from "../services/userServices";
+import { toast } from "react-toastify";
 
 export const RegisterPage = () => {
   const navigate = useNavigate();
@@ -100,13 +101,26 @@ export const RegisterPage = () => {
             información sobre cómo recopilamos, usamos y compartimos tu
             información en la política de privacidad.
           </p>
-          <button className="registrarse">Regístrate</button>
+          <button
+            className="registrarse"
+            onClick={() => {
+              toast("¡Te has registrado con éxito!", {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+              });
+            }}
+          >
+            Regístrate
+          </button>
           {error && <p>{error}</p>}
-          {success && (
-            <p>
-              Te has registrado con éxito!<Link to="/login">Ir a Login</Link>
-            </p>
-          )}
+          {success && navigate("/login")}
+          {/* // Te has registrado con éxito!<Link to="/login">Ir a Login</Link> */}
           <p className="siTengoCuenta">
             ¿Ya estás registrado?{" "}
             <Link className="login" to={"/login"}>
