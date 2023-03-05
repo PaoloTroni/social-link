@@ -1,0 +1,21 @@
+.globalLinkUnicoUser{
+
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+
+}
+
+.LinkUnicoUser{
+    grid-column: 1;
+    grid-row: 2;
+    padding-top: 2rem;
+    margin: auto;
+    width: 1200px;
+    box-shadow: -20px -20px  #e95317,
+                20px 20px  #e95317,
+                -20px 20px  #e95317,
+                20px -20px  #e95317;
+    border-radius: 30px;
+}

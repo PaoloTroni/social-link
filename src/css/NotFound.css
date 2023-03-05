@@ -1,0 +1,51 @@
+.NotFoundGlobal{
+    width: 1500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+    justify-items: center;
+    align-content: center;
+}
+
+
+.NotFound{
+    margin-top: 310px;
+    grid-column: 1;
+    grid-row: 1;
+
+    justify-items: center;
+    align-content: center;
+
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 1.5rem;
+    column-gap: 12rem;
+    padding: 2.5rem 2.5rem;
+
+    text-align: center;
+
+    height: 200px;
+    width: 500px;
+    background-color: #e8e8e8;
+    box-shadow: -20px -20px 60px #ffffff,
+    20px 20px 60px #bebebe;
+    border-radius: 30px;
+}
+
+.ErrorNotFound{
+    color: #e95317;
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.linkNotFound{
+    font-weight: 700;
+    font-size: large;
+    color: #333332;
+}
+
+.linkNotFound:hover{
+    color: #e95317;
+}

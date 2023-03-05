@@ -1,0 +1,91 @@
+.EditPassGlobal{
+    width: 1500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    justify-items: center;
+    align-content: center;
+  
+}
+
+.EEditPass{
+    margin-top: 300px;
+    margin-bottom: 200px;
+    grid-column: 1;  
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 320px;
+    width: 1000px;
+    background-color: #e8e8e8;
+    box-shadow: -20px -20px 60px #ffffff,
+    20px 20px 60px #bebebe;
+    border-radius: 30px;
+    padding: 5rem 3rem;
+
+}
+p.EditPassTitulo{
+    
+    grid-row: 1;
+    font-size: large;
+    font-weight: 700;
+
+    margin: 0 auto;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0.5rem;
+
+}
+
+form.EEditPassForm{
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.EditPassForm{
+    justify-self: center;
+    grid-column: 1;
+    grid-row: 2;
+    gap: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.5rem;
+}
+
+input.InputPass{
+    height: 35px;
+    width: 250px;
+    text-align: center;
+    border: 1px solid #333332;
+    border-radius:0 30px 30px 30px;
+}
+
+input::placeholder{
+    text-align:center;
+}
+
+.EditPassBoton{
+    grid-column: 1;
+    grid-row: 3;
+
+
+    width: 150px;
+    background-color: #e95317;
+    padding: 0.5rem 0;
+    border-radius: 30px;
+    color: #e7e6e6;
+    font-weight: 700;
+}
+
+button.EditPassBoton:hover {
+    background-color: #646464;
+    transition: 0.3s;
+  }

@@ -1,0 +1,6 @@
+.UlLinkUser{
+    display: grid;
+
+    grid-auto-flow: row;
+    gap: 2.5rem;
+}

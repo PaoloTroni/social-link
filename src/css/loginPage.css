@@ -1,7 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
 
 * {
-  font-family: "Raleway", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  font-size: medium;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,30 +10,9 @@
   text-decoration: none;
   border: none;
   outline: none;
-
-  background-color: #f3f3f3;
-}
-
-footer {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-footer > ul.estructuraFooter {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-footer > ul.estructuraFooter > li {
-  padding: 1rem;
-}
-footer > p {
-  color: #b9b9b9;
-  padding-bottom: 2rem;
-}
+  background-color: #e8e8e8;
+ 
+ }
 
 .linkFooter {
   color: #333332;
@@ -50,15 +30,15 @@ section.global {
   align-items: center;
 }
 
+.homePage {
+  height: 600px;
+  padding-right: 3rem;
+}
+
 section.estructuraFormulario {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.homePage {
-  height: 600px;
-  padding-right: 3rem;
 }
 
 .logo {
@@ -67,18 +47,19 @@ section.estructuraFormulario {
   margin-bottom: 1.5rem;
 }
 
-input::placeholder {
-  color: #646464;
-  text-align: center;
-}
-
 input.formulario {
+  background-color: #e8e8e8;
   width: 250px;
   border: 0.5px solid #646464;
   border-radius: 30px;
   padding: 0.5rem 0;
   text-align: center;
   margin-bottom: 1.3rem;
+}
+
+input::placeholder {
+  color: #646464;
+  text-align: center;
 }
 
 button.inicioSesion {
@@ -91,7 +72,7 @@ button.inicioSesion {
 
 button.inicioSesion:hover {
   background-color: #646464;
-  transition: 0.7s;
+  transition: 0.3s;
 }
 
 .noTengoCuenta {
@@ -103,4 +84,46 @@ button.inicioSesion:hover {
 .registro {
   font-weight: 700;
   color: #e95317;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  width: 1250px;
+  height: 80px;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #e0e0e0;
+  border-radius:30px 30px 0 0;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+}
+
+footer > ul.estructuraFooter {
+  background: #e0e0e000;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+footer > ul.estructuraFooter > li {
+  padding: 1rem;
+  background: #e0e0e000;
+}
+
+footer > p {
+  background: #e0e0e000;
+  padding-bottom: 2rem;
+  color: #3333324b;
+  font-weight: 700;
+}
+
+.linkFooter{
+  background: #e0e0e000;
+  font-weight: 700;
 }

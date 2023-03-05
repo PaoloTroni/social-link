@@ -1,16 +1,38 @@
 .legalNoticeGlobal {
-  width: 1000px;
+
   margin: 0 auto;
-  padding-top: 5rem;
+  width: 1000px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+
+
+.ElegalNotice{
+
+  margin-top: 165px;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
+
+  width: 1200px;
+  background-color: #e8e8e8;
+  box-shadow: -20px -20px 60px #ffffff,
+  20px 20px 60px #bebebe;
+  border-radius: 30px;
+  padding: 2rem 3rem;
+  border-radius: 30px;
 }
 
-h2.legalNoticeTitulo {
+p.legalNoticeTitulo {
+  font-weight: 700;
+  font-size: large;
   text-align: center;
-  margin-bottom: 2rem;
+
 }
 
 p.legalNoticeP {
@@ -18,7 +40,7 @@ p.legalNoticeP {
 }
 
 img.legalNoticePng {
-  width: 600px;
-  padding-top: 3rem;
-  padding-bottom: 1rem;
+  width: 400px;
+  padding-top: 2rem;
+
 }

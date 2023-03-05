@@ -30,6 +30,7 @@ button.botonSalir {
 }
 
 img.iconoSalir {
+  background-color: #f0f0f000;
   height: 15px;
   padding-left: 5px;
 }

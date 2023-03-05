@@ -1,4 +1,5 @@
 section.aboutUsGlobal {
+  margin-top: 330px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,33 +14,30 @@ ul.estructuraUl {
   justify-content: center;
   align-items: center;
   gap: 5rem;
+
+  height: 280px;
+  width: 1200px;
+  background-color: #e8e8e8;
+  box-shadow: -20px -20px 60px #ffffff,
+  20px 20px 60px #bebebe;
+  border-radius: 30px;
+  padding: 2rem 3rem;
+  border-radius: 30px;
 }
 
 img.desarrolladores {
-  padding-bottom: 2rem;
+width: 150px;
 }
 
-/* img.imagen1 {
-    width: 150px;
-    height: 150px;
-    position: absolute;
+img.desarrolladores:hover {
+  width: 180px;
+  transition: 0.3s;
   }
-  
-  img.imagen2 {
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    opacity: 0;
-    transition: 0.5s;
-  } */
 
-/* img.imagen2:hover {
-    opacity: 100;
-  } */
 
 p.estructuraP {
-  display: flex;
 
+  text-align: center;
   padding-top: 1rem;
   color: #333332;
   font-size: large;

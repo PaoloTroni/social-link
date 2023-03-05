@@ -50,7 +50,7 @@ button.registrarse {
 
 button.registrarse:hover {
   background-color: #646464;
-  transition: 0.7s;
+  transition: 0.3s;
 }
 
 p.condicionesDePrivacidad {

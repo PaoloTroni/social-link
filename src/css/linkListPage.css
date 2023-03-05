@@ -1,31 +1,28 @@
 ul.linkListGlobal {
   display: flex;
   flex-direction: column;
-  column-gap: 1rem;
+
+  gap: 2.5rem;
+
 }
 
-li.linkListLi {
-  border-bottom: none;
-  width: 1000px;
-  height: 170px;
-  background-color: #33333210;
-  margin: 0 auto;
-  padding: 2rem 5rem;
+li.linksListli {
+  background-color: #e8e8e8;
+  box-shadow: -20px -20px 60px #ffffff,
+  20px 20px 60px #bebebe;
+  border-radius: 30px;
 
+  width: 1200px;
+  margin: 0 auto;
+  
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  
 }
-
-li.linkListLi:hover {
-  background-color: #e95317;
-  height: 190px;
-  width: 1100px;
+li.linksListli:hover {
+  width: 1250px;
+  border: 10px solid #e95317;
   border-radius: 30px;
-
-  transition: 0.5s;
-
-  box-shadow: 15px 15px 40px #5a5a5a70, -15px -15px 40px #5a5a5a70;
-
-  margin: 1rem 0;
+  transition: 0.3s;
 }
